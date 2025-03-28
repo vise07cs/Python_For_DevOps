@@ -5,6 +5,14 @@
 ### Functions
 
 A function in Python is a block of code that performs a specific task. Functions are defined using the `def` keyword and can take inputs, called arguments. They are a way to encapsulate and reuse code.
+Python interpreter understands looking at `def` that its a function. 
+
+Benefits of functions:
+1 -->  increases readiblity
+2 --> re - usability or modularity
+3 --> Debugging is easier 
+
+
 
 **Example:**
 
@@ -21,6 +29,8 @@ In this example, `greet` is a function that takes a `name` argument and returns 
 ### Modules
 
 A module is a Python script containing Python code. It can define functions, classes, and variables that can be used in other Python scripts. Modules help organize and modularize your code, making it more maintainable.
+
+module == group of functions 
 
 **Example:**
 
@@ -49,6 +59,8 @@ In this case, `my_module` is a Python module containing the `square` function an
 ### Packages
 
 A package is a collection of modules organized in directories. Packages help you organize related modules into a hierarchy. They contain a special file named `__init__.py`, which indicates that the directory should be treated as a package.
+
+package== collection of modules
 
 **Example:**
 
