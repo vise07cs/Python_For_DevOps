@@ -82,7 +82,12 @@ result = module1.function_from_module1()
 ```
 
 In this example, `my_package` is a Python package containing modules `module1` and `module2`.
+So if you know your module is goinf to be used by other team members its always a good practice to push the module to a PYPI( Python package index )
+you can download modules form PYPI modules and packages.(Google --> pypi-->search for modules) .
+pip install boto3
+pip install github
 
+pip list --> to see all the list of modules installed 
 ## 2. How to Import a Package
 
 Importing a package or module in Python is done using the `import` statement. You can import the entire package, specific modules, or individual functions/variables from a module.
@@ -110,17 +115,38 @@ Python workspaces refer to the environment in which you develop and run your Pyt
 
 Python workspaces can be local or virtual environments. A local environment is the system-wide Python installation, while a virtual environment is an isolated environment for a specific project. You can create virtual environments using tools like `virtualenv` or `venv`.
 
+Each project should have  a seperate virtual Environment (#good_practice)
+modules installed on one virtual env will not be reflected in other virtual env
+pip install virtualenv
+
 **Example:**
 
 ```bash
 # Create a virtual environment
-python -m venv myenv
+pip install virtualenv
+
+
+python -m venv project_name
 
 # Activate the virtual environment (on Windows)
-myenv\Scripts\activate
+project_name\Scripts\activate
 
 # Activate the virtual environment (on macOS/Linux)
-source myenv/bin/activate
+source project_name/bin/activate
+
+
+pip install module_name
+
+pip show module_name 
+# DeActivate the virtual environment
+ deactivate
+
+# To delete the virtual env
+ rmdir .\project_name\
 ```
 
 Once activated, you work in an isolated workspace with its Python interpreter and library dependencies.
+ On activation, your command prompt will typically show the name of the virtual environment in parentheses.
+
+to come out --> use command --> deactivate
+
