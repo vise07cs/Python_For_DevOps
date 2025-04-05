@@ -14,7 +14,10 @@ print(my_variable)  # Output: 42
 Difference between statically and dynamically typed programing language 
 in some other programming language we have to explicitly define what type of data are we going to assign to a varibale 
 ex : in Go prog lang 
+
 var name String="vise";
+
+
 but in python , we can simply define it as 
 name="vise";
 Hence python is a dynamically typed prog language
