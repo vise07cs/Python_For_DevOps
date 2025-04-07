@@ -11,3 +11,6 @@ def update_server_config2(file_path,key,value):
 # update_server_config2("day12\server.conf","MAX_CONNECTIONS","1000")
 
 update_server_config2("server.conf","MAX_CONNECTIONS","1400")
+
+
+# no updates for the day
